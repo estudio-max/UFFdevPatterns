@@ -23,6 +23,15 @@ git clone https://github.com/estudio-max/UFFdevPatterns ~/.claude/skills/uffdevp
 
 Instalada em `~/.claude/skills/`, vale para todos os projetos da máquina. Para um projeto só, clone em `.claude/skills/uffdevpatterns` dentro do repositório.
 
+No **Codex**, clone em `~/.codex/skills/uffdevpatterns` e aponte para ela no `~/.codex/AGENTS.md` (ou no `AGENTS.md` do projeto), já que lá as instruções chegam por esse arquivo:
+
+```markdown
+Siga a skill UFFdevPatterns: leia `~/.agents/skills/uffdevpatterns/SKILL.md` antes de mexer no projeto,
+ao planejar fases, ao mexer em testes ou CI, e antes de declarar tarefa concluída.
+```
+
+O conteúdo é markdown puro — serve a qualquer agente que leia arquivo.
+
 O nome da pasta e o campo `name` do frontmatter precisam ficar em minúsculas — é o formato que o carregador de skills aceita.
 
 ## Uso
